@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="MageKey\CustomerRestriction\Model\Restriction\Login\Email">
+        <plugin name="BDA_CustomerRestriction_Plugin_Lo" type="BDA\CustomerRestriction\Plugin\Restriction\Login\Email" sortOrder="10" disabled="false"  />
+    </type>
+    <type name="MageKey\CustomerRestriction\Model\Restriction\Registration\Email">
+        <plugin name="BDA_CustomerRestriction_Plugin" type="BDA\CustomerRestriction\Plugin\Restriction\Registration\Email" sortOrder="10" disabled="false"  />
+    </type>
+</config>
