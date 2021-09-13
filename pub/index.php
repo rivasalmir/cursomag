@@ -1,4 +1,6 @@
 <?php
+$_SERVER['MAGE_PROFILER'] = [ 'drivers' => [['output' => 'MSP\DevTools\Profiler\Driver\Standard\Output\DevTools']] ];
+
 /**
  * Public alias for the application entry point
  *

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="BDA_Cart::menu" title="Cart" translate="title" module="BDA_Cart" sortOrder="50" parent="BDA_Base::bda" resource="BDA_Cart::menu" />
+        <add id="BDA_Cart::config" title="Settings" translate="title" module="BDA_Cart" sortOrder="100" parent="BDA_Cart::menu" action="adminhtml/system_config/edit/section/BDA_Cart" resource="BDA_Cart::config" />
+    </menu>
+</config>
