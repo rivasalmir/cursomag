@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance dc" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="content.top">
+            <block name="bda.empty.cart.message" class="BDA\Cart\Block\CartMessage" template="BDA_Cart::cart_message.phtml">
+            </block>
+        </referenceBlock>
+    </body>
+</page>

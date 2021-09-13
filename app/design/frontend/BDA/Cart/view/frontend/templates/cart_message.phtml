@@ -1,0 +1,7 @@
+<?php
+/** @var Magento\Framework\View\Element\Template $block **/
+$emptyCartString = $block->getCartMessage();
+
+if($emptyCartString !== false){
+    echo '<div>' . $emptyCartString . '</div>';
+}

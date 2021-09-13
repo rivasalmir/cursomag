@@ -1,3 +1,4 @@
+SetEnv MAGE_PROFILER MSP\DevTools\Profiler\Driver\Standard\Output\DevTools
 RewriteEngine on
 RewriteCond %{REQUEST_URI} !^/pub/
 RewriteCond %{REQUEST_URI} !^/setup/

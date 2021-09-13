@@ -1,0 +1,16 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * @var $block \Magento\CatalogInventory\Block\Stockqty\DefaultStockqty
+ */
+?>
+<?php if ($block->isMsgVisible()) : ?>
+    <!-- todo: extrair css -->
+    <div class="availability only" title="<?= $block->escapeHtmlAttr(__('%1 In Stock', ($block->getStockQtyLeft())))?>" style="width: 412px;height: 21px;margin: 26px 48px 8px 40px;font-family: Inter-Regular_;font-size: 14px;font-weight: 500;font-stretch: normal;font-style: normal;line-height: 1.5;letter-spacing: 0.25px;color: #037827;">
+        <?= /* @noEscape */ __('%1 In Stock', "<strong>{$block->escapeHtml($block->getStockQtyLeft())}</strong>") ?>
+    </div>
+<?php endif ?>

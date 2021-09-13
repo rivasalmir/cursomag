@@ -1,0 +1,26 @@
+{
+    "name": "almirrivas/module-primeiromodulo",
+    "description": "Primeiro m\u00f3dulo para acompanhamento da aula",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        },
+        {
+            "name": "Almir Rivas",
+            "email": "rivasalmir@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "AlmirRivas\\PrimeiroModulo\\": ""
+        }
+    }
+}
