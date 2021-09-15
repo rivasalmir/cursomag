@@ -13,7 +13,7 @@ class Email
     {
         $this->helperData = $helperData;
     }
-    public function afterGetErrorMessage(\MageKey\CustomerRestriction\Model\Restriction\Registration\ $subject, $return)
+    public function afterGetErrorMessage(\MageKey\CustomerRestriction\Model\Restriction\Registration $subject, $return)
     {
         return $this->helperData->getGeneralConfig('error_message_registration');
     }
