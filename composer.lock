@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42380de17b4921248a9d72b9928ee217",
+    "content-hash": "63b46e8c65aa0ed6c9e810e2b73e0017",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -4879,6 +4879,46 @@
                 }
             ],
             "time": "2021-01-18T20:58:21+00:00"
+        },
+        {
+            "name": "magekey/module-customer-restriction",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magekey/module-customer-restriction.git",
+                "reference": "b0f0806786cd9b9de47d0f0281d468197bb6e156"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magekey/module-customer-restriction/zipball/b0f0806786cd9b9de47d0f0281d468197bb6e156",
+                "reference": "b0f0806786cd9b9de47d0f0281d468197bb6e156",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "MageKey\\CustomerRestriction\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicholas Miller",
+                    "email": "nick@magekey.com"
+                }
+            ],
+            "description": "Magento 2 Customer Restriction",
+            "support": {
+                "issues": "https://github.com/magekey/module-customer-restriction/issues",
+                "source": "https://github.com/magekey/module-customer-restriction/tree/2.1.4"
+            },
+            "time": "2019-05-07T15:58:22+00:00"
         },
         {
             "name": "magento/adobe-ims",
