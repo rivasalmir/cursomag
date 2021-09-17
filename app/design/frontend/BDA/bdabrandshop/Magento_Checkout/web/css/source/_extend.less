@@ -1,0 +1,100 @@
+/**
+ * Edit & Remove Cart
+ *@category Magento_Checkout
+ *@package Magento_checkout
+ *@author Uriel Hernandez <uriel.hernandez@globant.com>
+ */
+ 
+ .edit-action-links{
+    width: 210px;
+    height: 27px;
+    margin: 16px 29px 126px 20px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: 0.25px;
+    color: #000;
+    margin-left: -94px;
+  .title-link{
+      text-decoration: underline;
+  }
+}
+
+.delete-action-links{
+  width: 210px;
+  height: 27px;
+  margin: 16px 29px 126px 20px;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.25px;
+  color: #000;
+  text-decoration: underline;
+  margin-left: -29px;
+}
+
+.name-product{
+  width: 202px;
+  height: 23px;
+  margin: 7px 37px 11px 20px;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+
+.item-options{
+  width: 210px;
+  height: 71px;
+  margin: 8px 29px 16px 20px;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.25px;
+  color: #000;
+}
+
+.split.button.wishlist{
+  display: none !important;
+}
+
+& when (@media-common = true) {
+      
+  .cart-summary {
+
+      .block.shipping {
+          display: none;
+      }
+      .cart-totals {
+          border: none;
+
+          .mark {
+              padding-left: 0;
+          }
+      }
+      .grand.totals {
+          border-top: 1px solid @line-separator__color;
+      
+          .mark, .amount {
+              padding-top: 10px;
+          }
+      }
+      .summary.title, .grand.totals strong {
+          font-weight: bold;
+          font-size: 1.6rem;
+      }
+  }
+}
