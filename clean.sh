@@ -10,3 +10,4 @@ sudo rm -rf var/view_preprocessed/*
 sudo rm -rf /var/di/* /var/generation/*
 sudo rm -rf var/view_preprocessed/* 
 sudo rm -rf pub/static/frontend/*
+sudo rm -rf var/log/* 

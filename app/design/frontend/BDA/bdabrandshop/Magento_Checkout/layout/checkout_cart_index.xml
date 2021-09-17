@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<update handle="checkout_cart_index" />
+	<body>
+		<referenceContainer name="content">
+			<referenceContainer name="cart.summary">
+				<referenceBlock name="checkout.cart.shipping">
+					<arguments>
+						<argument name="jsLayout" xsi:type="array">
+							<item name="components" xsi:type="array">
+								<item name="block-summary" xsi:type="array">
+									<item name="config" xsi:type="array">
+										<item name="componentDisabled" xsi:type="boolean">
+											true
+										</item>
+									</item>
+								</item>
+							</item>
+						</argument>
+					</arguments>
+				</referenceBlock>
+				<referenceBlock name="checkout.cart.giftcardaccount" remove="true" />
+				<referenceBlock class="Magento\Framework\View\Element\Template" name="checkout.cart.summary.title">
+					<arguments>
+						<argument translate="true" name="text" xsi:type="string">
+							Order summary
+						</argument>
+					</arguments>
+				</referenceBlock>
+				<referenceContainer name="checkout.cart.totals.container">
+					<referenceBlock name="checkout.cart.totals">
+						<arguments>
+							<argument name="jsLayout" xsi:type="array">
+								<item name="components" xsi:type="array">
+									<item name="block-totals" xsi:type="array">
+										<item name="component" xsi:type="string">
+											Magento_Checkout/js/view/cart/totals
+										</item>
+										<item name="displayArea" xsi:type="string">
+											totals
+										</item>
+										<item name="config" xsi:type="array">
+											<item name="template" xsi:type="string">
+												Magento_Checkout/cart/totals
+											</item>
+										</item>
+										<item name="children" xsi:type="array">
+											<!-- sort order for this totals is configured on admin panel -->
+											<!-- Stores->Configuration->SALES->Sales->General->Checkout Totals Sort Order -->
+											<item name="subtotal" xsi:type="array">
+												<item name="component" xsi:type="string">
+													Magento_Checkout/js/view/summary/subtotal
+												</item>
+												<item name="config" xsi:type="array">
+													<item name="title" xsi:type="string" translate="true">
+														Merchandise
+													</item>
+													<item name="template" xsi:type="string">
+														Magento_Checkout/cart/totals/subtotal
+													</item>
+												</item>
+											</item>
+											<item name="shipping" xsi:type="array">
+												<item name="config" xsi:type="array">
+													<item name="componentDisabled" xsi:type="boolean">
+														true
+													</item>
+												</item>
+											</item>
+											<item name="tax" xsi:type="array">
+												<item name="config" xsi:type="array">
+													<item name="componentDisabled" xsi:type="boolean">
+														true
+													</item>
+												</item>
+											</item>
+											<item name="grand-total" xsi:type="array">
+												<item name="config" xsi:type="array">
+													<item name="title" xsi:type="string" translate="true">
+														Subtotal
+													</item>
+												</item>
+											</item>
+										</item>
+									</item>
+								</item>
+							</argument>
+						</arguments>
+					</referenceBlock>
+				</referenceContainer>
+				<referenceBlock name="checkout.cart.coupon" remove="true" />
+			</referenceContainer>
+		</referenceContainer>
+	</body>
+</page>
