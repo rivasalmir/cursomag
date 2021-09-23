@@ -1,0 +1,1 @@
+sudo chmod 777 -R generated/* && sudo chmod 777 -R pub/* &&  sudo chmod 777 -R var/*

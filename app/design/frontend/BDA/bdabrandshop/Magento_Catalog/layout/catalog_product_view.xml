@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Move breadcrumb to the right, above all elements -->
+        <move element="breadcrumbs" destination="product.info.main" before="-" />
+        <!-- Move Product Title to the right, below breadcrumbs -->
+        <move element="page.main.title" destination="product.info.main" after="breadcrumbs" />
+        <!-- Move SKU after Title -->
+        <move element="product.info.stock.sku" destination="product.info.main" after="page.main.title" />
+        <!-- Remove "Be the first to review this product" block -->
+        <referenceBlock name="product.info.review" remove="true" />
+        <!-- Move price below SKU -->
+        <move element="product.price.final" destination="product.info.main" after="product.info.stock.sku" />
+        <!-- Move Tabs (Accordions) to right column, below everything -->
+        <move element="product.info.description" destination="product.info.main" after="-" />
+        <!-- Removes "Add to Wish List/Compare" block -->
+        <referenceContainer name="product.info.extrahint" remove="true" />
+    </body>
+</page>
