@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63b46e8c65aa0ed6c9e810e2b73e0017",
+    "content-hash": "ef457d26e0bdccd80eb5df71064b80aa",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -1371,6 +1371,79 @@
                 "MIT"
             ],
             "description": "Engagement Cloud for Magento 2: SMS module"
+        },
+        {
+            "name": "ecomteck/module-custom-attribute-management",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ecomteck/module-custom-attribute-management.git",
+                "reference": "051190bb416a0d8ed8641b45154a04fe611e0ec8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ecomteck/module-custom-attribute-management/zipball/051190bb416a0d8ed8641b45154a04fe611e0ec8",
+                "reference": "051190bb416a0d8ed8641b45154a04fe611e0ec8",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Ecomteck\\CustomAttributeManagement\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "A Magento 2 module is extended of magento 2 attributes management to manage custom attributes on backend",
+            "support": {
+                "issues": "https://github.com/ecomteck/module-custom-attribute-management/issues",
+                "source": "https://github.com/ecomteck/module-custom-attribute-management/tree/master"
+            },
+            "time": "2019-07-29T02:02:48+00:00"
+        },
+        {
+            "name": "ecomteck/module-order-custom-attributes",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ecomteck/module-order-custom-attributes.git",
+                "reference": "333bfb52235c98e0daff3597743f7a8bca0a2d2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ecomteck/module-order-custom-attributes/zipball/333bfb52235c98e0daff3597743f7a8bca0a2d2b",
+                "reference": "333bfb52235c98e0daff3597743f7a8bca0a2d2b",
+                "shasum": ""
+            },
+            "require": {
+                "ecomteck/module-custom-attribute-management": "2.0.*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Ecomteck\\OrderCustomAttributes\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "A Magento 2 module is allow admin create, manage custom attributes to display on checkout page, order info",
+            "support": {
+                "issues": "https://github.com/ecomteck/module-order-custom-attributes/issues",
+                "source": "https://github.com/ecomteck/module-order-custom-attributes/tree/2.0.0"
+            },
+            "time": "2019-07-29T02:10:33+00:00"
         },
         {
             "name": "elasticsearch/elasticsearch",
